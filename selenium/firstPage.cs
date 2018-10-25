@@ -1,12 +1,5 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace selenium
 {
@@ -22,7 +15,7 @@ namespace selenium
         public IWebElement searchBar { get; set; }
 
 
-        [FindsBy(How = How.CssSelector, Using = "[data-hveid='CAQQAQ'] .LC20lb")]
+        [FindsBy(How = How.CssSelector, Using = "#rso > div:nth-child(1) > div > div > div > div > div.r > a > h3")]
         public IWebElement trainlineLink { get; set; }
 
 
